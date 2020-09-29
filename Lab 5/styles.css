@@ -1,0 +1,66 @@
+#sensor_img {
+    float: left;
+    padding: 1em;
+}
+
+#home_form_container {
+    margin: auto;
+    width: 50%;
+    background-color:whitesmoke;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.page_titles {
+    color: steelblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p,label,input,li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home_save_btn {
+    width: 100%;
+    background-color: teal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 1em;
+    border-width: 0em;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+
+ul.my_navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.my_navbar li {
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.my_navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.my_navbar li a:hover {
+    background-color: #111;
+}
+
+.my_navbar .active {
+    background-color: #4CAF50;
+}
+
+#temp_threshold {
+    font-style: italic;
+}

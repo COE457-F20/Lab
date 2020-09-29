@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <a href="http://auscse.com"><img src="http://auscse.com/main/images/banner.png" alt="CSE logo"
+            style="height:3em;"></a>
+    <ul class="my_navbar">
+        <li class='active'><a href="iotl-lab5-home.html">Home</a></li>
+        <li><a href="iotl-lab5-sensors.html">Sensors</a></li>
+    </ul>
+    
+</head>
+
+<body>
+    <p>You can setup the lights, AC and temperature of the room by filling the form below.</p>
+
+    <div id='home_form_container'>
+        <h1 class="page_titles">COE457 Smart Lab Set Up</h1>
+        <form action="" method="POST">
+            <label for="lab_lights"><b>Lab Lights</b></label>:
+            <input type="radio" id="lights_on" name="lab_lights" value="On">
+            <label for="lights_on">On</label>
+            <input type="radio" id="lights_off" name="lab_lights" value="Off">
+            <label for="lights_off">Off</label><br />
+
+            <label for="ac_mode"><b>AC Mode:</b> </label>
+            <input type="radio" id="ac_on" name="ac_mode" value="On">
+            <label for="ac_on">On</label>
+            <input type="radio" id="ac_off" name="ac_mode" value="Off">
+            <label for="ac_off">Off</label><br />
+
+            <label for="temp_threshold"><b>Temperature Threshold:</b> </label>
+            <input type="text" id="temp_threshold" name="temp_threshold" placeholder="in degrees celsius" /><br>
+
+            <br /><input id="home_save_btn" type="submit" value="Save">
+        </form>
+    </div>
+
+    <footer>
+        <p style='text-align: right;'> &copy; IOT Team 3: Taslim, Priyanka, Azadan</p>
+    </footer>
+
+
+</body>
+
+</html>
