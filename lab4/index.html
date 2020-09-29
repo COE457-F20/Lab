@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+</head>
+
+<body>
+    <header>
+        <a href="http://auscse.com/main/index.php">
+            <img style="height: 2em;" src="http://auscse.com/main/images/banner.png" alt="">
+        </a>
+        <h1>COE457 Smart Lab</h1>
+    </header>
+    <form action="" method="POST" style="border: 1px solid;">
+        <label for="lab_lights">Lab Lights</label>:
+        <input type="radio" id="lights_on" name="lab_lights" value="On">
+        <label for="lights_on">On</label>
+        <input type="radio" id="lights_off" name="lab_lights" value="Off">
+        <label for="lights_off">Off</label><br />
+
+        <label for="ac_mode">AC Mode: </label>
+        <input type="radio" id="ac_on" name="ac_mode" value="On">
+        <label for="ac_on">On</label>
+        <input type="radio" id="ac_off" name="ac_mode" value="Off">
+        <label for="ac_off">Off</label><br />
+
+        <label for="temp_threshold">Temperature Threshold: </label>
+        <input type="text" id="temp_threshold" name="temp_threshold" /><br>
+
+        <br /><input type="submit" value="Save">
+    </form>
+    <footer>
+        <p style='text-align: right;'>&copy; IOT Team 3: Taslim, Priyanka, Azadan</p>
+    </footer>
+</body>
+
+</html>
