@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Miriam Libre', sans-serif;
+}
+.brand img{
+    height: 3rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .main_image {
+    width: 50%;
+}
+
+.row .main_image img {
+    width: 100%;
+}
+/* Right Panel */
+.row .right_pane {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.row .right_pane img {
+    width: 30%;
+    padding-left: 3.3%;
+}
+.row .right_pane .app_store_images a img{
+    width: 30%;
+}
+.row .right_pane ul li{
+    text-decoration: none;
+    marker: none;
+    display: block;
+    line-height: 2;
+}
+.row .right_pane ul li i{
+    padding-right: 0.5rem;
+}
+
+/* Responsive - for Tablet and Phone - Make it 100% */
+@media (max-width: 768px) {
+    .row .main_image{
+        width: 100%;
+    }
+    .row .right_pane{
+        width: 100%;
+    }
+}
+/* Minor fix for Mobile Only  */
+@media (max-width: 400px) {
+    .row .right_pane ul{
+        padding-left: 1px;
+    }
+}
