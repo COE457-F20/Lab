@@ -4,15 +4,18 @@
 body{
     font-family: 'Miriam Libre', sans-serif;
 }
+/* Logo  */
 .brand img{
     height: 3rem;
 }
+/* Main Container  */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* Left Image  */
 .row .main_image {
+    align-self: center;
     width: 50%;
 }
 
@@ -43,7 +46,7 @@ body{
 }
 
 /* Responsive - for Tablet and Phone - Make it 100% */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .row .main_image{
         width: 100%;
     }
