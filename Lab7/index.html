@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>BeelineLab6</title>
+    <!-- Font Awesome For Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="alert alert-warning text-center" role="alert">
+        <strong>COVID 19 UPDATE:</strong> We are open and shipping orders as normal
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href=" https://beeline.co/"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Overview <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For bicycles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For motorcycles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Currency
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">AUD $</a>
+                        <a class="dropdown-item" href="#">CAD $</a>
+                        <a class="dropdown-item" href="#">GBP £</a>
+                        <a class="dropdown-item" href="#">JPY ¥</a>
+                        <a class="dropdown-item" href="#">USD $</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-shopping-basket"
+                            aria-hidden="true"></i>Basket</button>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><button type="button" class="btn btn-outline-primary" onclick="increase_font_size();">Increase font size</button>
+                </li>
+                <li class="nav-item"><button type="button" class="btn btn-outline-primary" onclick="change_font_type()">Change font type</button>
+                </li>
+                <li class="nav-item"> <button type="button" class="btn btn-outline-primary" onclick="restore_font_size();">Reset font size</button>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <a class="btn btn-info cover-full" data-toggle="collapse" href="#collapseForm" role="button" aria-expanded="false"
+        aria-controls="collapseForm">
+        Contact Us
+    </a>
+    <div class="collapse" id="collapseForm">
+        <form>
+            <div class="container">
+                <p>We Love hearing form our Beeline community. If you have any question or suggestion, or any other
+                    support issue, just fill this form!</p>
+                <div class="row">
+                    <div class="col">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" class="form-control" placeholder="First and Second name" required>
+                    </div>
+                    <div class="col">
+                        <label for="email">Email address</label>
+                        <input type="text" id="email" class="form-control" placeholder="Email.." required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="msg">Message*</label>
+                    <input type="text" class="form-control" id="msg" aria-describedby="msg" placeholder="Type your message here" required>
+                </div>
+
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="sendcheck">
+                    <label class="form-check-label" for="sendcheck">Send me a copy of this form</label>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="row">
+        <!-- Left Image  -->
+        <div class="main_image" onclick="reduceMySize();">
+            <img src="img/beeline.png" alt="">
+        </div>
+        <!-- Right Panel  -->
+        <div class="right_pane">
+            <h1 id="page_title">Beeline app</h1>
+            <p class="page_text"> Plan routes and see your journey history with the Beeline app available for iOS and
+                Android</p>
+            <div class="screenshot_group"  onclick="hideMe();">
+                <img src="img/iphone1.png" alt="iPhone 1">
+                <img src="img/iphone2.png" alt="iPhone 2">
+                <img src="img/iphone3.png" alt="iPhone 3">
+            </div>
+            <ul class="page_bullets">
+                <li><i class="fa fa-check-circle" aria-hidden="true"></i>Easily build your own routes and save them in
+                    the route planner, or import any GPX file</li>
+                <li><i class="fa fa-check-circle" aria-hidden="true"></i>Track all of your rides and stats to look back
+                    on past adventures</li>
+                <li><i class="fa fa-check-circle" aria-hidden="true"></i>Save your favourite places and routes</li>
+                <li><i class="fa fa-check-circle" aria-hidden="true"></i>Avoid motorways, tolls and ferries</li>
+            </ul>
+            <div class="app_store_images">
+                <a href="https://itunes.apple.com/app/id1095384281">
+                    <img src="img/apple.png" alt="Apple Link">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=co.beeline">
+                    <img src="img/android.png" alt="Android Link">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

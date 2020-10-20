@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Miriam Libre', sans-serif;
+
+}
+/* Nav Logo  */
+.navbar-brand img{
+    height: 2rem;
+}
+#navbarSupportedContent{
+    margin: auto;
+}
+/* collapse form  */
+
+.cover-full{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.collapse{
+    margin-bottom: 2rem;
+}
+/* Main Container  */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Left Image  */
+.row .main_image {
+    align-self: center;
+    width: 50%;
+}
+
+.row .main_image img {
+    width: 100%;
+    margin-left: 2%;
+}
+/* Right Panel */
+.row .right_pane {
+    width: 50%;
+    padding-left: 3rem;
+}
+
+.row .right_pane img {
+    width: 30%;
+    padding-left: 3.3%;
+}
+.row .right_pane .app_store_images a img{
+    width: 30%;
+}
+.row .right_pane ul li{
+    text-decoration: none;
+    marker: none;
+    display: block;
+    line-height: 2;
+}
+.row .right_pane ul li i{
+    padding-right: 0.5rem;
+}
+
+/* Responsive - for Tablet and Phone - Make it 100% */
+@media (max-width: 1024px) {
+    .row .main_image{
+        width: 100%;
+    }
+    .row .right_pane{
+        width: 100%;
+        padding-left: 0.5rem;
+    }
+    .row .main_image img {
+        margin-left: 0%;
+    }
+}
+/* Minor fix for Mobile Only  */
+@media (max-width: 400px) {
+    .row .right_pane ul{
+        padding-left: 1px;
+    }
+}
