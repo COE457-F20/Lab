@@ -27,7 +27,10 @@
                     <div class="card-body">
                         <h5 class="card-title"><%= image.name %> </h5>
                         <p class="card-text"><%= image.description %> </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <form action="/emotion/<%=image.name %>" method="GET" target="_blank">
+                            <input type="submit" name="" id="" class="btn btn-primary" value="Detect Emotion">
+                        </form>
+                        
                     </div>
                 </div>
             </div>

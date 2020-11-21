@@ -42,6 +42,9 @@ const Image = mongoose.model("Image", imageSchema);
 
 
 //------------------------------------------------
+app.get('/', function (req, res) {
+    res.redirect("/images");
+});
 app.get('/images', function (req, res) {
     Image.find({}, function (err, images) {
         if (err) {
@@ -51,7 +54,20 @@ app.get('/images', function (req, res) {
         }
     });
 });
-
+app.get('/images/:name', function (req, res) {
+    console.log(req.params.name);
+    Image.findOne({name: req.params.name}, function (err, images) {
+        if (err) {
+            res.status(400).send("ERROR");
+        } else {
+           res.send(images.img.data);
+        }
+    });
+});
+app.get('/emotion/:name', function (req, res) {
+    console.log(req.params.name);
+    res.redirect("http://localhost:1880/get_emotion?name="+req.params.name);
+});
 
 // custom 404 page 
 app.use(function (req, res) {
